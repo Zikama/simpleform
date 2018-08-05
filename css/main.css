@@ -22,7 +22,7 @@ color:#000;font-weight:bolder;background:rgba(0,255,0,.99);}
     border-radius: 10px;
     background: #6d6d6d; 
 }
-/*  Resonsive  */
+/*  Responsive  */
 header.header{
     display: flex;
     background: rgb(66,6,44);
@@ -39,7 +39,7 @@ header.header{
   margin-left: 5px;margin-right: 5px;
 }
 #small{
-    height: auto;margin-top: 12px;margin-right:-22px;
+    height: auto;margin-top: 12px;margin-right:-82px;
    flex: 1;width: auto;
    flex-basis: auto;
 }
@@ -403,7 +403,7 @@ a{
 @media screen and (min-width: 358px) {
 
 #menu{
-    display: inline-block;
+    display: inline-block;margin-right:22px;
 }
     #wide,  footer>div>button{
     display: none;
@@ -418,19 +418,9 @@ a{
           font-size: 22pt;
 }  
 }
-@media screen and (min-width: 420px){
-#menu{
-    display: inline-block;
-}
-    #wide,  footer>div>button{
-    display: none;
-}section.section>main>div>form>div.Math>input{
-    width: 750px;
-    }
-}
 @media screen and (min-width: 390px){
 #menu{
-    display: inline-block;
+    display: inline-block;margin-right:22px;
 }
     #wide,  footer>div>button{
        display: none;
@@ -440,6 +430,16 @@ a{
 }  
      section.section>main>div>form>div.Math>input{
          width: 125px;
+    }
+}
+@media screen and (min-width: 420px){
+#menu{
+    display: inline-block;margin-right:22px;
+}
+    #wide,  footer>div>button{
+    display: none;
+}section.section>main>div>form>div.Math>input{
+    width: 750px;
     }
 }
 @media screen and (min-width: 1024px){
