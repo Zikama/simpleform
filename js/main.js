@@ -9,6 +9,16 @@
           // Prevent form submition every btn/brn is clicked
           e.preventDefault(); 
       });
+        // Toggle a Menu on right
+           const menu = sel("#menu"),main =sel("section");
+menu.addEventListener("click",function(){
+    const nav = sel("#nav_bar");
+    nav.classList.toggle("hideNav")          
+        });
+main.addEventListener("click",function(){
+    const nav = sel("#nav_bar");
+    nav.classList.remove("hideNav")          
+        });
 
 //Change background color by random
     const bdy = sel("body"),button = sel("button");
@@ -19,16 +29,21 @@
     code =  '#'+col1+col2;
     bdy.style.backgroundColor = `${code}`;
     button.style.backgroundColor = `${code}`;
+ 
 }
 //Change background color by search {in future}
 function loadBySearch() {
-    let val = sel('#search').value;
-    bdy.style.backgroundColor = `${val}`;
-} 
-  
-       let from = sel("#from"),
-          to   = sel("#to"),
-          sign = sel("#sign"); 
+    let val = sel('.search'), menu_val = sel('#menu_search');
+     if(val.style.display !== "none"){
+    bdy.style.backgroundColor = `${val.value}`;
+}
+    else if(menu_val.style.display !== "none"){
+        bdy.style.backgroundColor = `${Menu_val.value}`;
+   }
+}
+       let from  = sel("#from"),
+           to    = sel("#to"),
+           sign  = sel("#sign"); 
            from.setAttribute("title","double click to edit");
            to.setAttribute("title","double click to edit");
            sign.setAttribute("title","Put in your prefered sign e.g * or - ");
@@ -103,8 +118,6 @@ function drop1() {
        else {
         panel1.style.display = "block";
       }
-        
-        /* same as it is above */
     }
     //___________ Third Accordion ___________________
 function drop2() {
