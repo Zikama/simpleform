@@ -48,7 +48,6 @@ header.header{
 }
 #menu>img:hover,
 #menu>img:focus {
-   width:55px;
    cursor: pointer;
    transition: .5s;
 }
